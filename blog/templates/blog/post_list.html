@@ -1,16 +1,19 @@
 <html>
 <body>
+    <head>
+        <title>Alomot's Site</title>
+    </head>
   <!--  <p> Hi there</p>
     <p> Still working on it</p> -->
     <div> 
         <h1><a href="/"> I died... </h1> 
-        </div>    
+    </div>    
         {% for post in posts %}
     <div>
         <h1><a hred="/"> {{post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
         <p><a href="/"> published: {{post.published_date }}</a></p>
-        </div>
+    </div>
       {% endfor %}  
         
 </body>
